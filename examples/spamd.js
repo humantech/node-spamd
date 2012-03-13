@@ -1,7 +1,7 @@
 var Spamd = require("node-spamd"),
 	spamd  = new Spamd(sender, receiver, host, port);
 
-spamd.evaluate(subject, message, function(res, err){
+spamd.evaluate(subject, message, function(res, err) {
 	if (err) {
 		console.log(err);
 	} else {
