@@ -4,6 +4,10 @@ This library use sockets to send a message to SpamAssassin daemon for evaluation
 
 Based on the SpamAssassin plugin from [Haraka](http://haraka.github.com/).
 
+## Install from npm
+
+	npm install node-spamd
+
 ## Usage
 
 	var Spamd = require("node-spamd");
