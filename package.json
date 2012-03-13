@@ -1,22 +1,41 @@
-{ "name": "node-spamd"
-, "version": "0.0.1"
-, "engines": [ "node >=0.4.0" ]
-, "description": "SpamAssassin message evaluator for node.js"
-, "author": "Thomas Alexander Ewald <thomas@humantech.com.br>"
-, "contributors": [
-		{ "name": "Guilherme Henrique de Oliveira", "email": "guilherme@humantech.com.br" }
-  ]
-, "keywords" : [ "spam", "evaluation", "spamassassin", "score" ]
-, "repository":{
-        "type": "git"
-      , "url": "https://github.com/humantech/node-spamd.git"
-  }
-, "bin" : { "spamd" : "./bin/spamd.js" }
-, "scripts": {
+{
+  "name": "node-spamd",
+  "version": "0.0.2",
+  "engines": [
+    "node >=0.4.0"
+  ],
+  "description": "SpamAssassin message evaluator for node.js",
+  "author": {
+    "name" : "Humantech Gestao do Conhecimento",
+    "email" : "admin@humantech.com.br",
+    "web" : "http://www.humantech.com.br/",
+    "twitter" : "humantech_"
+  },
+  "contributors": [
+    "Guilherme Henrique de Oliveira <guilherme@humantech.com.br>",
+    "Thomas Alexander Ewald <thomas@humantech.com.br>
+  ],
+  "license" : {
+    "type" : "MIT"
+  },
+  "keywords": [
+    "spam",
+    "evaluation",
+    "spamassassin",
+    "score"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/humantech/node-spamd.git"
+  },
+  "scripts": {
     "test": "vows --spec"
-  }
-, "directories" : {
-    "bin": "./bin"
-  }
-, "main": "./lib/spamd.js"
+  },
+  "directories" : {
+    "examples" : "examples"
+  },
+  "main": "./lib/spamd.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
 }

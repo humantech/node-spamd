@@ -9,16 +9,16 @@ Based on the SpamAssassin plugin from [Haraka](http://haraka.github.com/).
 	var Spamd = require("node-spamd");
 	var spamd  = new Spamd(sender, receiver, host, port);
 
-	spamd.evaluate(subject, message, function(res){
+	spamd.evaluate(subject, message, function(res, err){
 
-		if(typeof res !== 'undefined'){
-			if(res.spam){
+		if(err) {
+			console.log(err);
+		} else {
+			if(res.spam) {
 				console.log('The message is Spam, is evaluated with ' + res.evaluation + " points in a maximun of " + res.allowed);
 			}else{
 				console.log('The message is not Spam, is evaluated with ' + res.evaluation + " points in a maximun of " + res.allowed);
 			}
-		}else{
-			console.log('Some error ocurred.');
 		}
 	});
 
@@ -36,6 +36,12 @@ The method returns an object, with the following attributes:
 **spam** = **true** or **false**. Indicates the result of SpamAssassing analysis.
 <br/>**evaluation** = Number or points or hits, that the message has obtained.
 <br/>**allowed** = Configured minimal required points for SpamAssassin mark the message as SPAM. This is a spamd setting.
+
+## TODO
+
+* document source code;
+* real documentation;
+* jsHint standards.
 
 ## License
 
