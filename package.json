@@ -1,5 +1,5 @@
 { "name": "node-spamd"
-, "version": "0.0.1"
+, "version": "0.0.2"
 , "engines": [ "node >=0.4.0" ]
 , "description": "SpamAssassin message evaluator for node.js"
 , "author": "Thomas Alexander Ewald <thomas@humantech.com.br>"
