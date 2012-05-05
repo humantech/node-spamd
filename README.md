@@ -45,10 +45,12 @@ The method returns an object, with the following attributes:
 
 * document source code;
 * real documentation;
-* jsHint standards.
+* ~~jsHint standards~~ we don't like code standards.
 
 ## License
 
 Copyright (C) 2012 Humantech
 
 Distributed under the MIT License, the same as Node.js.
+
+[Read this](https://github.com/humantech/node-spamd/blob/master/LICENSE) if you're in doubt.
