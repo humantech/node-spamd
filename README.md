@@ -40,6 +40,7 @@ The method returns an object, with the following attributes:
 **spam** = **true** or **false**. Indicates the result of SpamAssassing analysis.
 <br/>**evaluation** = Number or points or hits, that the message has obtained.
 <br/>**allowed** = Configured minimal required points for SpamAssassin mark the message as SPAM. This is a spamd setting.
+<br/>**rules** = Array with detected [spam infractions](http://spamassassin.apache.org/tests_3_3_x.html)
 
 ## TODO
 
