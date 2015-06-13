@@ -30,7 +30,9 @@
     "examples": "examples"
   },
   "main": "./lib/spamd.js",
-  "dependencies": {},
+  "dependencies": {
+    "node-uuid": "1.x.x"
+  },
   "devDependencies": {},
   "optionalDependencies": {}
 }
